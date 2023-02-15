@@ -3,6 +3,7 @@ CREATE DATABASE items_db;
 
 \c items_db;
 
+DROP TABLE IF EXISTS items;
 CREATE TABLE items (
     id SERIAL PRIMARY KEY,
     item_name VARCHAR (50) NOT NULL,
