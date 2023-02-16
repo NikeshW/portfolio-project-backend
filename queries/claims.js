@@ -13,7 +13,7 @@ const getAllClaims = async (itemId) => {
 // SHOW
 const getOneClaim = async (id) => {
   try {
-    const oneClaim= await db.one("SELECT * FROM claims WHERE id=$1", id);
+    const oneClaim = await db.one("SELECT * FROM claims WHERE id=$1", id);
     return oneClaim;
   } catch (error) {
     return error;
