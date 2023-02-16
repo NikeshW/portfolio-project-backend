@@ -1,9 +1,9 @@
 const db = require("../db/dbConfig");
 
 //INDEX
-const getAllClaims = async (itemId) => {
+const getAllClaims = async (itemid) => {
   try {
-    const allUsers = await db.any("SELECT * FROM claims WHERE item_id=$1", itemId);
+    const allUsers = await db.any("SELECT * FROM claims WHERE item_id=$1", itemid);
     return allUsers;
   } catch (error) {
     return error;
