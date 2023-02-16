@@ -9,6 +9,12 @@ const {
   updateItem,
 } = require("../queries/items");
 
+// Importing reviews controller
+const claimsController = require("./claimsController.js");
+
+items.use("/:itemId/claims", claimsController);
+
+
 // GET ALL ITEMS/ INDEX
 
 items.get("/", async (req, res) => {
