@@ -9,6 +9,7 @@ const {
   updateClaim
 } = require("../queries/claims");
 
+
 // INDEX
 claims.get("/", async (req, res) => {
   const {itemId} = req.params
